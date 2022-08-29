@@ -271,10 +271,11 @@
 
 .inlinemail {
   display: flex;
+  cursor: not-allowed;
 }
 .inlinemailtrue {
   display: flex;
-  cursor:pointer;
+  cursor: pointer;
   &:hover {
     color: #6495ed;
   }
@@ -331,13 +332,17 @@
   border: 1px solid rgb(157, 158, 160);
 }
 
-.divsave{
-  display:none;
+.divsave {
+  display: none;
 }
 
 .phonefax {
-  cursor:pointer;
+  cursor: pointer;
   &:hover {
     color: #6495ed;
   }
+}
+
+.phonefaxfalse {
+  cursor: not-allowed;
 }

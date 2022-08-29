@@ -5,16 +5,16 @@ import Button from "@mui/material/Button";
 import Link from "next/link";
 import { CompanyContext } from "../CompanyContext";
 
-import router, { useRouter } from 'next/router'
+import router, { useRouter } from "next/router";
 
 function Headersearch() {
   const { onChangeInput, companies } = useContext(CompanyContext);
 
-  const handleKeyDown = (event:any) => {
-    if (event.key === 'Enter') {
+  const handleKeyDown = (event: any) => {
+    if (event.key === "Enter") {
       router.push({ pathname: `Resultpage` });
     }
-  }
+  };
 
   return (
     <header className={styles.navi}>

@@ -8,15 +8,11 @@ import Footer from "./Components/Footer";
 import styles from "../styles/Home.module.scss";
 import React, { useState, useContext } from "react";
 import { CompanyContext } from "./CompanyContext";
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
-
-
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 const ResultPage = () => {
   const { onChangeInput, companies } = useContext(CompanyContext);
-  {new Date().getFullYear()}
-  
 
   return (
     <div>
@@ -57,12 +53,16 @@ const ResultPage = () => {
         )}
       </div>
 
-<div className={styles.pagination}>
-     <Stack spacing={2}>
-      <Pagination count={10} size="large" variant="outlined" shape="rounded" />
-    </Stack>
-
-</div>
+      <div className={styles.pagination}>
+        <Stack spacing={2}>
+          <Pagination
+            count={10}
+            size="large"
+            variant="outlined"
+            shape="rounded"
+          />
+        </Stack>
+      </div>
 
       <div className={styles.footer}>
         <Footer />

@@ -14,7 +14,7 @@ import Typography from "@mui/material/Typography";
 import { ClickAwayListener } from "@mui/base";
 import { CompanyContext } from "../CompanyContext";
 import Link from "next/link";
-import router, { useRouter } from 'next/router'
+import router, { useRouter } from "next/router";
 
 function Card() {
   const [open, setOpen] = React.useState(false);
@@ -23,17 +23,17 @@ function Card() {
     creation_date?: string;
   }>({});
 
-  const { onChangeInput, companies,transmitslug } = useContext(CompanyContext);
- 
+  const { onChangeInput, companies, transmitslug } = useContext(CompanyContext);
+
   const handleClick = () => {
     setOpen((prev) => !prev);
   };
- 
-  const handleKeyDown = (event:any) => {
-    if (event.key === 'Enter') {
+
+  const handleKeyDown = (event: any) => {
+    if (event.key === "Enter") {
       router.push({ pathname: `Resultpage` });
     }
-  }
+  };
   const handleClickAway = () => {
     setOpen(false);
   };
@@ -55,7 +55,7 @@ function Card() {
               placeholder="Search from 243,989 companies"
               onChange={onChangeInput}
               onClick={handleClick}
-              onKeyPress={handleKeyDown} 
+              onKeyPress={handleKeyDown}
             />
             <Button className={styles.btn}>
               <Image
@@ -75,9 +75,12 @@ function Card() {
               />
             </Button>
             <Link href="Resultpage" passHref>
-              <Button className={styles.btns} variant="contained"
-               onKeyPress={handleKeyDown} >
-                <h3 > Search</h3>
+              <Button
+                className={styles.btns}
+                variant="contained"
+                onKeyPress={handleKeyDown}
+              >
+                <h3> Search</h3>
               </Button>
             </Link>
             {open ? (
@@ -86,29 +89,31 @@ function Card() {
                 sx={{ width: 675, maxWidth: "100%" }}
               >
                 <div className={styles.zmenu}>
-                  {companies.data?.filter((i:any, index:any) => index < 3).map((i: any, k: number) => (
-                    <MenuList key={k}>
-                      <MenuItem>
-                        <ListItemIcon></ListItemIcon>
-                        <ListItemText>
-                          {" "}
-                          <Link href="Companypage" passHref>
-                          <h3 
-                          onClick={() => {
-                           
-                            transmitslug();
-                            
-                          }}>{i.name} 
-                          </h3>
-                          </Link>
-                        </ListItemText>
-                        <Typography
-                          variant="body2"
-                          color="text.secondary"
-                        ></Typography>
-                      </MenuItem>
-                    </MenuList>
-                  ))}
+                  {companies.data
+                    ?.filter((i: any, index: any) => index < 3)
+                    .map((i: any, k: number) => (
+                      <MenuList key={k}>
+                        <MenuItem>
+                          <ListItemIcon></ListItemIcon>
+                          <ListItemText>
+                            {" "}
+                            <Link href="Companypage" passHref>
+                              <h3
+                                onClick={() => {
+                                  transmitslug();
+                                }}
+                              >
+                                {i.name}
+                              </h3>
+                            </Link>
+                          </ListItemText>
+                          <Typography
+                            variant="body2"
+                            color="text.secondary"
+                          ></Typography>
+                        </MenuItem>
+                      </MenuList>
+                    ))}
                 </div>
               </Paper>
             ) : null}

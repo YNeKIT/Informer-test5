@@ -31,15 +31,11 @@ function Tablethree() {
           <th>PHONE</th>
         </tr>
       </thead>
-      
+
       <tbody>
         {companyProfile.similar_companies?.map((similar: any, k: number) => (
           <tr key={k}>
-            {similar?.name === null ? (
-              <td> --</td>
-            ) : (
-              <td>{similar?.name}</td>
-            )}
+            {similar?.name === null ? <td> --</td> : <td>{similar?.name}</td>}
             {similar?.industry === null ? (
               <td> --</td>
             ) : (
@@ -51,86 +47,91 @@ function Tablethree() {
               <td>{similar?.location}</td>
             )}
             {similar?.site === null ? (
-               <td>
-               <div className={styles.mail}>
-               <div className={styles.mailimg}>
-                 <Image 
-                   className={styles.mailimg}
-                   src="/internet.svg"
-                   width={18}
-                   height={20}
-                 />
-                 </div>
-                 <h4 className={styles.mailhover}> WEBSITE </h4>
-               </div>
-             </td>
+              <td>
+                <div className={styles.mail}>
+                  <div className={styles.mailimg}>
+                    <Image
+                      className={styles.mailimg}
+                      src="/internet.svg"
+                      width={18}
+                      height={20}
+                    />
+                  </div>
+                  <h4 className={styles.mailhover}> WEBSITE </h4>
+                </div>
+              </td>
             ) : (
               <td>
                 <div className={styles.mail}>
-              <div className={styles.mailimg}>
-                <Image 
-                  className={styles.mailimg}
-                  src="/internet.svg"
-                  width={18}
-                  height={20}
-                />
+                  <div className={styles.mailimg}>
+                    <Image
+                      className={styles.mailimg}
+                      src="/internet.svg"
+                      width={18}
+                      height={20}
+                    />
+                  </div>
+                  <h4 className={styles.mailhovertrue}> WEBSITE </h4>
                 </div>
-                <h4 className={styles.mailhovertrue}> WEBSITE </h4>
-              </div></td>
+              </td>
             )}
             {similar?.email === null ? (
               <td>
                 <div className={styles.mail}>
-                <div className={styles.mailimg}>
-                  <Image 
-                    className={styles.mailimg}
-                    src="/mail.svg"
-                    width={18}
-                    height={20}
-                  />
+                  <div className={styles.mailimg}>
+                    <Image
+                      className={styles.mailimg}
+                      src="/mail.svg"
+                      width={18}
+                      height={20}
+                    />
                   </div>
                   <h4 className={styles.mailhover}> EMAIL </h4>
                 </div>
               </td>
             ) : (
-              <td><div className={styles.mail}>
-              <div className={styles.mailimg}>
-                <Image 
-                  className={styles.mailimg}
-                  src="/mail.svg"
-                  width={18}
-                  height={20}
-                />
+              <td>
+                <div className={styles.mail}>
+                  <div className={styles.mailimg}>
+                    <Image
+                      className={styles.mailimg}
+                      src="/mail.svg"
+                      width={18}
+                      height={20}
+                    />
+                  </div>
+                  <h4 className={styles.mailhovertrue}> EMAIL </h4>
                 </div>
-                <h4 className={styles.mailhovertrue}> EMAIL </h4>
-              </div></td>
+              </td>
             )}
             {similar?.phone === null ? (
               <td>
                 <div className={styles.mail}>
-                <div className={styles.mailimg}>
-                  <Image 
-                    className={styles.mailimg}
-                    src="/phoneblack.svg"
-                    width={18}
-                    height={20}
-                  />
+                  <div className={styles.mailimg}>
+                    <Image
+                      className={styles.mailimg}
+                      src="/phoneblack.svg"
+                      width={18}
+                      height={20}
+                    />
                   </div>
                   <h4 className={styles.mailhover}> PHONE </h4>
                 </div>
               </td>
             ) : (
-              <td><div className={styles.mail}>
-              <div className={styles.mailimg}>
-                <Image 
-                  className={styles.mailimg}
-                  src="/phoneblack.svg"
-                  width={18}
-                  height={20}
-                />
+              <td>
+                <div className={styles.mail}>
+                  <div className={styles.mailimg}>
+                    <Image
+                      className={styles.mailimg}
+                      src="/phoneblack.svg"
+                      width={18}
+                      height={20}
+                    />
+                  </div>
+                  <h4 className={styles.mailhovertrue}> PHONE </h4>
                 </div>
-                <h4 className={styles.mailhovertrue}> PHONE </h4>
-              </div></td>
+              </td>
             )}
           </tr>
         ))}

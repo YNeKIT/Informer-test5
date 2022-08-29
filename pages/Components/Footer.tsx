@@ -6,7 +6,6 @@ import SelectButton from "./selectButton";
 export default function Footer() {
   return (
     <div className={styles.headeropus}>
-   
       <div className={styles.contentopus}>
         <div className={styles.firstblock}>
           <Image

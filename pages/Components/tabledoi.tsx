@@ -50,32 +50,32 @@ function CustomizedTablesdoi() {
               <td>{personalinfo?.function}</td>
             )}
             {personalinfo?.phone === null ? (
-               <td>
-               <div className={styles.mail}>
-               <div className={styles.mailimg}>
-                 <Image 
-                   className={styles.mailimg}
-                   src="/phoneblack.svg"
-                   width={18}
-                   height={20}
-                 />
-                 </div>
-                 <h4 className={styles.mailhover}> PHONE </h4>
-               </div>
-             </td>
+              <td>
+                <div className={styles.mail}>
+                  <div className={styles.mailimg}>
+                    <Image
+                      className={styles.mailimg}
+                      src="/phoneblack.svg"
+                      width={18}
+                      height={20}
+                    />
+                  </div>
+                  <h4 className={styles.mailhover}> PHONE </h4>
+                </div>
+              </td>
             ) : (
               <td>{personalinfo?.phone}</td>
             )}
             {personalinfo?.email === null ? (
               <td>
                 <div className={styles.mail}>
-                <div className={styles.mailimg}>
-                  <Image 
-                    className={styles.mailimg}
-                    src="/mail.svg"
-                    width={18}
-                    height={20}
-                  />
+                  <div className={styles.mailimg}>
+                    <Image
+                      className={styles.mailimg}
+                      src="/mail.svg"
+                      width={18}
+                      height={20}
+                    />
                   </div>
                   <h4 className={styles.mailhover}> EMAIL </h4>
                 </div>

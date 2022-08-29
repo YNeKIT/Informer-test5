@@ -1,17 +1,43 @@
 .main {
- margin-top: 178px;
- background-color: rgb(215, 238, 230);
- display: block;
- padding-bottom: 709px;
-
-
- width: 100%;
+  margin-top: 178px;
+  background-color: #eef9f8;
+  display: block;
+  height: 1000px;
+  margin-bottom: 100px;
+  width: 100%;
 
 }
 
-
 .text {
-    padding-top: 70px;
-    margin-left: 150px;
-    font-size: 26px;
+  padding-top: 70px;
+  margin-left: 150px;
+  font-size: 26px;
+  display: flex;
+  cursor: pointer;
+  .viewall {
+    margin-left: 1200px;
+    font-size: 27px;
+    margin-top: 59px;
+    color: #097cc0;
+  }
+  .arrowblue {
+    margin-top: 58px;
+    margin-left: 6px;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+}
+
+.skeletonblock {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 80px;
+  .cardcompanyskeleton {
+    width: 370px;
+    height: 480px;
+    margin-left: 100px;
+  }
 }

@@ -4,6 +4,7 @@ import "macro-css";
 import React, { useState } from "react";
 import { CompanyContext } from "./CompanyContext";
 import axios from "axios";
+
 function MyApp({ Component, pageProps }: AppProps) {
   const [query, setQuery] = React.useState("");
   const [companies, setCompanies] = React.useState<{
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         .then((res) => {
           setCompanies(res.data);
           console.log(res.data);
+          console.log(res.data?.slug)
         });
     }
   };
@@ -43,25 +45,14 @@ function MyApp({ Component, pageProps }: AppProps) {
       )
       .then((res) => {
         setCompanyProfile(res.data);
-        console.log(res.data);
-        console.log(companyProfile?.name);
-        console.log(companyProfile?.general_data?.contact_info.adress_de_facto?.additional.long)
+        // console.log(res.data);
+        // console.log(companyProfile?.name);
+        // console.log(
+        //   companyProfile?.general_data?.contact_info.adress_de_facto?.additional
+        //     .long
+        // );
       });
   }
-
-  // const center = {
-  //     lat: companyProfile.general_data?.contact_info?.adress_de_facto?.additional?.lat,
-  //     lng: companyProfile.general_data?.contact_info?.adress_de_facto?.additional?.long,
-    
-  // }
-
-
-  // function transmitgeo () {
-  //   localStorage.setItem('lat', companyProfile.general_data?.contact_info?.adress_de_facto?.additional?.lat);
-  //   localStorage.setItem('lng', companyProfile.general_data?.contact_info?.adress_de_facto?.additional?.long);
-   
-  // }
-
 
   return (
     <CompanyContext.Provider

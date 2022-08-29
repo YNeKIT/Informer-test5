@@ -19,6 +19,10 @@ const CardCompany: React.FC<CardCompanyProps> = ({ company }) => {
     localStorage.setItem("SLUG", `${company.slug}`);
   }
 
+  const year = new Date().getFullYear();
+
+  const result = year - company.creation_year;
+
   return (
     <div className={styles.backround}>
       <div className={styles.content}>
@@ -49,7 +53,10 @@ const CardCompany: React.FC<CardCompanyProps> = ({ company }) => {
               Date of establishment:
               <h4 className={styles.result}>{company.creation_year}</h4>
             </h4>
-            <h4>Vârstă:12 years</h4>
+            <h4>
+              {" "}
+              Vârsta: <h4 className={styles.result}> {result} </h4>
+            </h4>
           </div>
 
           <div className={styles.profileblockdoi}>

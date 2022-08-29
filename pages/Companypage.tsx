@@ -16,7 +16,6 @@ import LineCharts from "./Components/Charts";
 import Link from "next/link";
 
 const CompanyPage = () => {
-  
   const { companyProfile } = useContext(CompanyContext);
 
   const center = {
@@ -24,14 +23,14 @@ const CompanyPage = () => {
       ?.lat,
     lng: companyProfile.general_data?.contact_info?.address_de_facto?.additional
       ?.long,
-      
   };
   const containerStyle = {
     width: "780px",
     height: "550px",
   };
-  console.log(companyProfile.general_data?.contact_info?.address_de_facto?.additional
-    ?.lat);
+  console.log(
+    companyProfile.general_data?.contact_info?.address_de_facto?.additional?.lat
+  );
   return (
     <div className={styles.backround}>
       <Headersearch />
@@ -201,8 +200,8 @@ const CompanyPage = () => {
               WEBSITE: <br></br>
             </h4>
             <h4 className={styles.contactinfotext}>
-            {/* {`/blog/${encodeURIComponent(post.slug)}` */}
-            <Link href= {`${companyProfile.general_data?.contact_info.sites[0]}`}>   </Link>
+              {/* {`/blog/${encodeURIComponent(post.slug)}` */}
+              {companyProfile.general_data?.contact_info.sites[0]}
             </h4>
           </div>
           <div className={styles.contactinfopartdoi}>
@@ -249,7 +248,7 @@ const CompanyPage = () => {
       <div className={styles.lineschartpossition}>
         <div className={styles.lineschart}>
           <LineCharts />
-          </div>
+        </div>
       </div>
 
       <div className={styles.capitalblock}>
