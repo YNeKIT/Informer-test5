@@ -1,0 +1,343 @@
+.mainblock {
+  border: 1px solid rgb(236, 236, 250);
+  padding-top: 50px;
+  margin-top: 120px;
+  background-color: white;
+}
+
+.firstblock {
+  margin-left: 155px;
+  margin-top: 10px;
+}
+
+.companyname {
+  display: inline-block;
+  margin-left: 17px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 17px;
+}
+
+.menublock {
+  font-size: 20px;
+
+  .menublockOn {
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+    &:hover {
+      color: #6495ed;
+    }
+  }
+  .menublockO {
+    margin-left: 80px;
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      color: #6495ed;
+    }
+  }
+
+  menublockO::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  menublockO:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.activeornot {
+  margin-top: 25px;
+  background-color: rgb(56, 244, 71);
+  padding-left: 5px;
+  width: 64px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.notactive {
+  margin-top: 25px;
+  background-color: rgb(201, 52, 52);
+  padding-left: 5px;
+  width: 84px;
+  color: #eaf0f6;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.secondblock {
+  margin-top: 23px;
+  margin-left: 158px;
+  width: 1620px;
+  margin-right: 158px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  .idno {
+    border-radius: 2px;
+    border: 1px solid rgb(236, 236, 250);
+
+    width: 540px;
+    height: 145px;
+    .idnotex {
+      margin-left: 80px;
+      margin-top: 30px;
+    }
+  }
+  .registration {
+    border: 1px solid rgb(236, 236, 250);
+
+    width: 540px;
+    height: 145px;
+    .idnotex {
+      margin-left: 80px;
+      margin-top: 30px;
+    }
+  }
+  .staff {
+    border: 1px solid rgb(236, 236, 250);
+    margin-right: 50px;
+    border-right: none;
+
+    width: 540px;
+    height: 145px;
+
+    .idnotex {
+      margin-left: 80px;
+      margin-top: 30px;
+    }
+  }
+}
+.thirdmainblock {
+  display: flex;
+
+  .thirdblock {
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-left: 154px;
+    border: 1px solid rgb(236, 236, 250);
+    width: 800px;
+    height: 562px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .thirdblockp {
+    margin-top: 30px;
+    margin-left: 40px;
+    border: 1px solid rgb(236, 236, 250);
+    width: 780px;
+    height: 555px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    .blockforgrafic {
+      display: flex;
+    }
+
+    .worktable {
+      padding-top: 0;
+      margin-top: 0;
+      border: 1px solid rgb(241, 241, 246);
+
+      width: 300px;
+      height: 70px;
+      background-color: #f5f8fb;
+    }
+
+    .worktablet {
+      padding-top: 0;
+      margin-top: 0;
+      border: 1px solid rgb(236, 236, 250);
+      width: 480px;
+      height: 70px;
+    }
+  }
+
+  .textaligng {
+    margin-left: 80px;
+  }
+  .texta {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+.idnotexgri {
+  color: gray;
+}
+
+.googleMapBox {
+  border: 1px solid rgb(236, 236, 250);
+  margin-top: 10px;
+}
+
+.googleMap {
+  margin-top: 10px;
+}
+
+.contactinfo {
+  margin-top: 10px;
+  margin-left: 154px;
+  width: 799px;
+  border: 1px solid rgb(236, 236, 250);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  height: 350px;
+
+  .contactinfotext {
+    cursor: pointer;
+    display: flex;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    &:hover {
+      color: #6495ed;
+    }
+  }
+
+  .contactinfomargin {
+    margin-left: 40px;
+  }
+
+  .contactinfodisplay {
+    display: flex;
+    .contactinfopartone {
+      margin-left: 40px;
+      margin-top: 10px;
+      margin-right: 200px;
+    }
+    .contactinfopartdoi {
+      margin-top: 10px;
+      position: absolute;
+      margin-left: 500px;
+    }
+  }
+}
+.partnersblock {
+  margin-top: 23px;
+  margin-left: 154px;
+  margin-right: 158px;
+  background-color: white;
+  display: flex;
+  width: 798px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  .idno {
+    border-radius: 2px;
+    border: 1px solid rgb(236, 236, 250);
+    width: 399px;
+    height: 180px;
+    .idnotex {
+      margin-left: 90px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.table {
+  margin-top: 50px;
+  margin-left: 158px;
+  width: 1610px;
+
+  margin-bottom: 90px !important;
+}
+
+.capitalblock {
+  margin-top: 5px;
+  margin-left: 154px;
+  margin-right: 158px;
+  background-color: white;
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 1620px;
+  .capital {
+    border-radius: 2px;
+    border: 1px solid rgb(236, 236, 250);
+    width: 540px;
+    height: 150px;
+    .capitaltex {
+      margin-left: 90px;
+      margin-top: 30px;
+      font-size: 13px;
+    }
+    .capitaldatatext {
+      display: inline;
+    }
+  }
+}
+
+.inlinemail {
+  display: flex;
+}
+.inlinemailtrue {
+  display: flex;
+  cursor:pointer;
+  &:hover {
+    color: #6495ed;
+  }
+}
+
+.lineschart {
+  width: 1510px;
+  height: 500px;
+  margin-bottom: 150px;
+}
+.lineschartpossition {
+  border: 1px solid rgb(236, 236, 250);
+  margin-left: 158px;
+  margin-right: 250px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tablethree {
+  margin-left: 158px;
+}
+
+.tablenameTHREE {
+  height: 40px;
+}
+.tableheight {
+  height: 40px !important;
+}
+
+.footer {
+  margin-top: 100px !important;
+}
+
+.mapsundefined {
+  height: 550px;
+  width: 780px;
+  cursor: not-allowed;
+}
+.turnoverstyle {
+  margin-bottom: 15px;
+}
+
+.turnovernumber {
+  color: #2083be;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.turnovertext {
+  border-bottom: 1px solid rgb(236, 236, 250);
+}
+
+.borderforchart {
+  border: 1px solid rgb(157, 158, 160);
+}
+
+.divsave{
+  display:none;
+}
+
+.phonefax {
+  cursor:pointer;
+  &:hover {
+    color: #6495ed;
+  }
+}

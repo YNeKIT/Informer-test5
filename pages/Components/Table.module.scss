@@ -1,0 +1,83 @@
+
+
+.contenttable {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 1620px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.tablename{
+  background-color: #ffffff;
+  color:black;
+  font-size: 18px;
+  // cursor: not-allowed;
+}
+
+.contenttable thead tr {
+  background-color: #EAF0F6;
+  color: #141313;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contenttable th,
+.contenttable td {
+  padding: 12px 15px;
+}
+
+.contenttable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.contenttable tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.contenttable tbody tr:last-of-type {
+  border-bottom: 2px solid #EAF0F6;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #EAF0F6;
+}
+
+.mail{
+  display: flex;
+   .mailimg {
+   display: flex;
+   margin-right: 5px;
+   padding: 0px;
+   margin-top: 0px;
+   cursor: not-allowed;
+   }
+   .mailhover{
+    color:#c8c8c8;
+    cursor: not-allowed;
+   }
+   .mailhovertrue{
+cursor:pointer;
+color:#2c2893;
+&:hover {
+  color: #6495ed;
+}
+   }
+
+}
+
+.tablethree{
+  margin-left: 200px;
+}
+
+.tablenameTHREE{
+  height: 80px;
+}
+
+.tableheight{
+  height: 70px;
+}

@@ -1,0 +1,74 @@
+.headeropus {
+  border-top: 1px solid #cbcccf;
+  height: 300px;
+  margin-left: 300;
+}
+
+.contentopus {
+  margin-left: 155px;
+  margin-top: 30px;
+  display: flex;
+
+  .secondblock {
+    display: inline;
+    margin-left: 200px;
+    .textblueedit {
+      margin-top: 30px;
+      color: #5bacff;
+      cursor: pointer;
+      &:hover {
+        color: #6495ed;
+      }
+    }
+  }
+
+  .thirdblock {
+    margin-left: 250px;
+
+    .textblueedit {
+      margin-top: 30px;
+      color: #5bacff;
+      cursor: pointer;
+      &:hover {
+        color: #6495ed;
+      }
+    }
+  }
+
+  .fourblock {
+    margin-left: 300px;
+    .textedit {
+      margin-left: 60px;
+    }
+    .textedite {
+      margin-left: 87px;
+    }
+    
+    .textblueedit {
+      margin-top: 30px;
+      color: #5bacff;
+      cursor: pointer;
+      &:hover {
+        color: #6495ed;
+      }
+    }
+  }
+}
+
+.selectbutton {
+  margin-top: 30px;
+  width: 293px;
+  height: 63px;
+}
+
+.fiveblock {
+  margin-top: 200px;
+  margin-left: 120px;
+  margin-right: 120px;
+
+  .credentials {
+    margin-top: 100px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}

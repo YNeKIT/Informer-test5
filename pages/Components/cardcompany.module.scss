@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;800&family=Josefin+Sans:wght@700&family=Mouse+Memoirs&family=Roboto:ital,wght@1,300&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+
+
+
+
+
+
+
+.backround {
+  margin-top: 50px;
+  margin-left: 158px;
+  margin-right: 158px;
+  border: 2px solid rgb(204, 201, 201);
+
+  &:hover {
+    border: 2px solid #6495ed;
+    box-shadow: 3px 3px 8px #888888;
+    transition-duration: 2;
+  }
+}
+.content {
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
+.profilename {
+  display: flex;
+  .hone {
+    margin-left: 26px !important;
+    color: #467bbf;
+    cursor: pointer;
+
+    .spane {
+      margin-left: 300px;
+      padding: 0;
+    }
+
+    &:hover {
+      color: #A6B1BC;
+    }
+  }
+}
+.profileblock{
+display: flex;
+font-family: 'Roboto', sans-serif;
+
+.profileblockdoi{
+   margin-top: 15px;
+  margin-left: 300px;
+  font-size: 10px;
+  color: #888888;
+  font-family: 'Roboto', sans-serif;
+  .profileblockdoialign{
+    margin-top: 10px;
+  }
+}
+
+.profileblocktrei{
+  position: absolute;
+  margin-bottom: 50px!important;
+  margin-left: 1300px;
+  font-size: 10px;
+  color: #e2dcdc;
+  font-family: 'Roboto', sans-serif;
+
+
+  .phonetext{
+    margin-left: 5px;
+    color:rgb(32, 32, 110);
+    cursor: pointer;
+
+    &:hover {
+      color: #467bbf;
+    }
+
+
+
+  }
+
+  .phonetextfalse{
+   margin-left:5px;
+   color:#888888;
+
+  }
+  .mobilephone {
+    display: flex;
+    font-size: 13px;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+
+   
+  }
+}
+
+}
+.profileinfod {
+  font-size: 18px;
+  color: #888888;
+  display: inline-block;
+}
+
+.profileinfos {
+  font-size: 18px;
+  color: #888888;
+  display: inline-block;
+}
+
+.profiletable {
+  display: inline-block;
+  font-size: 9px;
+}
+
+.hrlinie {
+  margin-right: 40px;
+  color: rgb(204, 201, 201) !important;
+}
+
+.founders {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+.statusblock {
+display:flex;
+
+.statusActive{
+  display: flex;
+  height: 20px;
+  width: 60px;
+  background-color: red;
+  
+}
+}
+
+
+
+.result {
+  color: black;
+  display: inline;
+  font-weight:700;
+}
+.resultnumber {
+  font-size: 20px;
+  display: inline;
+  color: black;
+  font-weight: 700;
+}
+
+.activeornot {
+  margin-top: 25px;
+  background-color: rgb(56, 244, 71);
+  padding-left: 5px;
+  width: 64px;
+}
