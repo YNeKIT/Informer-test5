@@ -33,3 +33,9 @@ export default function topCompany() {
     </div>
   );
 }
+
+{/* <div className={styles.main}>
+    <div className={styles.firstblock}>
+    <div className={styles.maintext}><h1>Search for potential customers by keywords</h1></div>
+    </div>
+    </div> */}

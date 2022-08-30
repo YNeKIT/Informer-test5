@@ -193,6 +193,7 @@
     cursor: pointer;
     display: flex;
     max-width: 400px;
+    color: #2083be;
     overflow-wrap: break-word;
     &:hover {
       color: #6495ed;
@@ -345,4 +346,7 @@
 
 .phonefaxfalse {
   cursor: not-allowed;
+}
+.displaynone{
+  display: none;
 }

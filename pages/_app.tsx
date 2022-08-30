@@ -45,12 +45,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       )
       .then((res) => {
         setCompanyProfile(res.data);
-        // console.log(res.data);
-        // console.log(companyProfile?.name);
-        // console.log(
-        //   companyProfile?.general_data?.contact_info.adress_de_facto?.additional
-        //     .long
-        // );
+        console.log(res.data);
+        console.log(companyProfile?.name);
+        console.log(
+          companyProfile?.general_data?.contact_info.adress_de_facto?.additional
+            .long
+        );
       });
   }
 

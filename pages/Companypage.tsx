@@ -6,13 +6,15 @@ import Headersearch from "./Components/headersearch";
 import Footer from "./Components/Footer";
 import CustomizedTables from "./Components/Table";
 import CustomizedTablesdoi from "./Components/tabledoi";
+import InfoHeader from "./Components/infoHeader";
 import { useContext } from "react";
 import { CompanyContext } from "./CompanyContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { Marker } from "@react-google-maps/api";
 import Tablethree from "./Components/Tablethree";
 import LineCharts from "./Components/Charts";
+import Blackbar from "./Components/blackbar";
 import Link from "next/link";
 
 const CompanyPage = () => {
@@ -28,12 +30,31 @@ const CompanyPage = () => {
     width: "780px",
     height: "550px",
   };
-  console.log(
-    companyProfile.general_data?.contact_info?.address_de_facto?.additional?.lat
-  );
+  
+
+
+
+ function classNames(...styles:any) {
+    return styles.filter(Boolean).join('');
+ } 
+
+ const[scroll, setScroll] = useState(0);
+
+useEffect(() => {
+    const updatePosition =() =>{
+        setScroll(window.pageYOffset);
+    };
+    window.addEventListener('scroll', updatePosition);
+    updatePosition();
+    return() => window.removeEventListener('scroll', updatePosition);
+}, []);
+
   return (
     <div className={styles.backround}>
       <Headersearch />
+      {scroll > 0 ? (
+      <InfoHeader/>  ) : ( <div className={styles.displaynone}> none </div>)}
+
       <div className={styles.backround}>
         <div className={styles.mainblock}>
           <div className={styles.firstblock}>

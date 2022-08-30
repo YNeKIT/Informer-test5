@@ -1,0 +1,79 @@
+
+.main{
+    position:sticky;
+    margin-top: 0!important;
+    height:90px;
+    width: 100%;
+    background-color: #EAF0F6 !important;
+   transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+     position: fixed!important;
+     z-index: 9999;
+     transition: 0.5s ease-in-out;
+    .logocompany{
+        margin-top: 0!important;
+        margin-left: 170px;
+        display: flex;
+        .logo{
+           
+            position: absolute;
+        }
+
+    }
+    .companyinfo{
+        margin-top: 0!important;
+        margin-left: 15px;
+
+        .companyname{
+            margin-top: 0!important;
+          
+            padding: 0;
+            display: flex;
+            
+            .companynameh1{
+               
+                font-size: 20px;
+                margin-bottom: 0!important;
+                padding: 0;
+                display: flex;
+            }
+
+         
+        }
+        .about {
+            margin-top: 0;
+        }
+    }
+}
+.activeornot {
+    margin-left: 10px;
+    margin-top: 19px;
+    background-color: rgb(56, 244, 71);
+    padding-left: 5px;
+    width: 64px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .notactive {
+    margin-top: 20px;
+    background-color: rgb(201, 52, 52);
+    padding-left: 5px;
+    margin-left: 5px;
+    width: 84px;
+    color: #eaf0f6;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .blackbar {
+    width: 100%;
+    margin: 10;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    background-color: #152935 !important;
+    position: fixed;
+    p {
+      color: white;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
